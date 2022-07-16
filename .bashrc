@@ -151,7 +151,7 @@ then
     echo "Vous pouvez fermer cet onglet"
     echo
 else
-    cd data
+    cd informatique_BUT1
     echo -e "\e[38;5;69mMise à jour des fichiers (groupe $(git branch --show-current))...\e[0m"
     git checkout HEAD .
     git pull
