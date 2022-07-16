@@ -120,13 +120,13 @@ fi
 # http://patorjk.com/software/taag/#p=display&h=1&c=echo&f=Doom&t=Module%20Informatique
 
 echo
-echo -e "\e[38;5;236m"
+echo -e "\e[38;5;69m"
 echo "██ ███    ██ ███████  ██████  ██████  ███    ███  █████  ████████ ██  ██████  ██    ██ ███████ ";
 echo "██ ████   ██ ██      ██    ██ ██   ██ ████  ████ ██   ██    ██    ██ ██    ██ ██    ██ ██      ";
 echo "██ ██ ██  ██ █████   ██    ██ ██████  ██ ████ ██ ███████    ██    ██ ██    ██ ██    ██ █████   ";
 echo "██ ██  ██ ██ ██      ██    ██ ██   ██ ██  ██  ██ ██   ██    ██    ██ ██ ▄▄ ██ ██    ██ ██      ";
 echo "██ ██   ████ ██       ██████  ██   ██ ██      ██ ██   ██    ██    ██  ██████   ██████  ███████ ";
-echo -e "\e[38;5;53mLudovic Grossard, département Mesures Physiques, IUT du Limousin\e[0m\e[38;5;236m         ▀▀                    ";
+echo -e "\e[38;5;117mLudovic Grossard, département Mesures Physiques, IUT du Limousin\e[0m\e[38;5;236m         ▀▀                    ";
 echo -e "\e[0m"
 echo -e ""
 echo
@@ -146,7 +146,7 @@ then
     git checkout ${1}
     cd ..
     echo
-    echo -e "\e[32mLe cours est prêt\e[0m"
+    echo -e "\e[38;5;83mLe cours est prêt\e[0m"
     echo -e "Pour commencer, double-cliquez sur \e[1mmenu.ipynb\e[0m dans le dossier informatique_BUT1."
     echo "Vous pouvez fermer cet onglet"
     echo
@@ -156,7 +156,7 @@ else
     git checkout HEAD .
     git pull
     echo
-    echo -e "\e[32mLe cours est à jour\e[0m"
+    echo -e "\e[38;5;83mLe cours est à jour\e[0m"
     echo "Vous pouvez fermer cet onglet"
     echo
     cd ..
