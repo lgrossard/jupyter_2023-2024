@@ -136,7 +136,7 @@ if [[ ! -d informatique_BUT1 ]]
 then
     echo -e "\e[38;5;69mTéléchargement des fichiers du cours d'informatique...\e[0m"
 
-    git clone https://git.unilim.fr/grossp01/jupyter_2023-2024.git
+    git clone https://git.unilim.fr/grossp01/jupyter_2023-2024.git informatique_BUT1
     mv jupyter_2022-2023 informatique_BUT1
 
     mv ~/.bashrc ~/.bashrc-old
