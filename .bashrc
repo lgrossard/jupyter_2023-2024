@@ -136,15 +136,15 @@ if [[ ! -d informatique_BUT1 ]]
 then
     echo -e "\e[38;5;69mTéléchargement des fichiers du cours d'informatique...\e[0m"
 
-    git clone https://git.unilim.fr/grossp01/jupyter_2022-2023.git
+    git clone https://git.unilim.fr/grossp01/jupyter_2023-2024.git
     mv jupyter_2022-2023 informatique_BUT1
 
     mv ~/.bashrc ~/.bashrc-old
     ln -s ~/work/informatique_BUT1/.bashrc ~/.bashrc
-    mkdir personnel
+    # mkdir personnel
     cd informatique_BUT1
-    git checkout ${1}
-    cd ..
+    # git checkout ${1}
+    # cd ..
     echo
     echo -e "\e[38;5;83mLe cours est prêt\e[0m"
     echo -e "Pour commencer, cliquez sur \e[1mmenu.ipynb\e[0m dans le dossier informatique_BUT1."
@@ -152,7 +152,7 @@ then
     echo
 else
     cd informatique_BUT1
-    echo -e "\e[38;5;69mMise à jour des fichiers (groupe $(git branch --show-current))...\e[0m"
+    echo -e "\e[38;5;69mMise à jour des fichiers...\e[0m"
     git checkout HEAD .
     git pull
     echo
